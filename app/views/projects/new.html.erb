@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="row d-flex justify-content-center">
+    <div class="col-md-4 text-center">
+      <h4>New project</h4>
+
+      <%= render "form", project: @project %>
+
+      <br>
+
+      <div>
+        <%= link_to "Back to projects", projects_path, class: 'text-decoration-none' %>
+      </div>
+    </div>
+    <div class="col-md-8"></div>
+  </div>
+</div>

@@ -1,0 +1,9 @@
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-12 text-center">
+      <h1>COLLABORATE, <span class="text-success"><%= current_user.username %></span></h1>
+      <%= link_to "Edit Account", edit_user_path(current_user), class: 'text-decoration-none' %>
+      <%= link_to "Delete Account", current_user, data: { confirm: "Are you sure?" }, method: :delete, class: 'text-decoration-none' %>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-3">
+      <h4 class="text-center">Login</h4>
+
+      <%= form_with(model: @user, local: true) do |f| %>
+        <div class="mb-3">
+          <%= f.label :name %><br>
+          <%= f.text_field :name, autofocus: true, class: 'form-control' %><br>
+        </div>
+
+        <div class="mb-3">
+          <%= f.label :password %><br>
+          <%= f.password_field :password, class: 'form-control' %><br>
+        </div>
+
+        <div class="mb-3 text-center">
+          <%= f.submit "Login", class: 'btn btn-dark btn-small' %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
